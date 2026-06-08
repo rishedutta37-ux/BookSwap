@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books | BookSwap</title>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html"><span class="logo-icon"><i class="fa-solid fa-book-open"></i></span>BookSwap</a>
+      <div class="nav-links"><a data-nav href="index.html">Home</a><a data-nav href="books.html">Books</a><a data-nav href="categories.html">Categories</a><a data-nav href="sellers.html">Sellers</a><a data-nav href="pricing.html">Pricing</a><a data-nav href="contact.html">Contact</a></div>
+      <div class="auth-buttons"><a class="login-btn" href="login.html">Login</a><a class="signup-btn" href="signup.html">Sign Up</a></div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <div><span class="page-kicker"><i class="fa-solid fa-book"></i> Marketplace</span><h1>Find the right books for your next semester.</h1><p>Search, filter, and contact student sellers from one organized listing page.</p></div>
+        <a class="btn btn-primary" href="sell.html"><i class="fa-solid fa-circle-plus"></i>Sell a Book</a>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="filter-panel">
+          <label class="sr-only" for="book-search">Search listings</label>
+          <input id="book-search" data-book-search type="search" placeholder="Search title, author, or subject">
+          <label class="sr-only" for="category-filter">Category</label>
+          <select id="category-filter" data-category-filter>
+            <option value="">All categories</option>
+            <option value="computer-science">Computer Science</option>
+            <option value="engineering">Engineering</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="physics">Physics</option>
+            <option value="commerce">Commerce</option>
+            <option value="medical">Medical</option>
+            <option value="law">Law</option>
+            <option value="arts">Arts</option>
+          </select>
+          <label class="sr-only" for="condition-filter">Condition</label>
+          <select id="condition-filter" data-condition-filter>
+            <option value="">Any condition</option>
+            <option value="like-new">Like New</option>
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="used">Used</option>
+          </select>
+        </div>
+
+        <p class="results-note" data-results-count>0 listings found</p>
+        <div class="empty-state" data-empty-state>No books match those filters. Try a different subject or condition.</div>
+
+        <div class="book-grid">
+          <article class="book-card reveal" data-book-card data-title="Data Structures" data-author="Narasimha Karumanchi" data-category="computer-science" data-condition="good">
+            <div class="book-cover"><img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=700&q=80" alt="Data Structures book"></div>
+            <div class="book-body"><h3>Data Structures</h3><div class="book-meta"><span class="pill">Computer Science</span><span class="pill pill-green">Good</span></div><p class="price">Rs. 250</p><p class="muted">Narasimha Karumanchi edition with practice notes.</p><button class="btn btn-primary" type="button" data-notify="Seller contact feature is coming soon.">Contact Seller</button></div>
+          </article>
+          <article class="book-card reveal" data-book-card data-title="Operating Systems" data-author="Galvin" data-category="engineering" data-condition="excellent">
+            <div class="book-cover"><img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=700&q=80" alt="Operating Systems book"></div>
+            <div class="book-body"><h3>Operating Systems</h3><div class="book-meta"><span class="pill">Engineering</span><span class="pill pill-yellow">Excellent</span></div><p class="price">Rs. 300</p><p class="muted">Clean copy for OS and systems programming courses.</p><button class="btn btn-primary" type="button" data-notify="Seller contact feature is coming soon.">Contact Seller</button></div>
+          </article>
+          <article class="book-card reveal" data-book-card data-title="Database Systems" data-author="Korth" data-category="computer-science" data-condition="like-new">
+            <div class="book-cover"><img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=700&q=80" alt="Database Systems book"></div>
+            <div class="book-body"><h3>Database Systems</h3><div class="book-meta"><span class="pill">Computer Science</span><span class="pill pill-green">Like New</span></div><p class="price">Rs. 220</p><p class="muted">Ideal for DBMS semester coursework.</p><button class="btn btn-primary" type="button" data-notify="Seller contact feature is coming soon.">Contact Seller</button></div>
+          </article>
+          <article class="book-card reveal" data-book-card data-title="Engineering Mathematics" data-author="B. S. Grewal" data-category="mathematics" data-condition="used">
+            <div class="book-cover"><img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=700&q=80" alt="Engineering Mathematics book"></div>
+            <div class="book-body"><h3>Engineering Mathematics</h3><div class="book-meta"><span class="pill">Mathematics</span><span class="pill pill-yellow">Used</span></div><p class="price">Rs. 180</p><p class="muted">Complete copy with solved examples marked.</p><button class="btn btn-primary" type="button" data-notify="Seller contact feature is coming soon.">Contact Seller</button></div>
+          </article>
+          <article class="book-card reveal" data-book-card data-title="Concepts of Physics" data-author="H. C. Verma" data-category="physics" data-condition="good">
+            <div class="book-cover"><img src="https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?auto=format&fit=crop&w=700&q=80" alt="Physics book"></div>
+            <div class="book-body"><h3>Concepts of Physics</h3><div class="book-meta"><span class="pill">Physics</span><span class="pill pill-green">Good</span></div><p class="price">Rs. 210</p><p class="muted">Good for entrance and first-year physics practice.</p><button class="btn btn-primary" type="button" data-notify="Seller contact feature is coming soon.">Contact Seller</button></div>
+          </article>
+          <article class="book-card reveal" data-book-card data-title="Financial Accounting" data-author="T. S. Grewal" data-category="commerce" data-condition="excellent">
+            <div class="book-cover"><img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=700&q=80" alt="Accounting book"></div>
+            <div class="book-body"><h3>Financial Accounting</h3><div class="book-meta"><span class="pill">Commerce</span><span class="pill pill-yellow">Excellent</span></div><p class="price">Rs. 260</p><p class="muted">Commerce foundation text with workbook pages.</p><button class="btn btn-primary" type="button" data-notify="Seller contact feature is coming soon.">Contact Seller</button></div>
+          </article>
+          <article class="book-card reveal" data-book-card data-title="Human Anatomy" data-author="B. D. Chaurasia" data-category="medical" data-condition="used">
+            <div class="book-cover"><img src="https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?auto=format&fit=crop&w=700&q=80" alt="Medical anatomy book"></div>
+            <div class="book-body"><h3>Human Anatomy</h3><div class="book-meta"><span class="pill">Medical</span><span class="pill pill-yellow">Used</span></div><p class="price">Rs. 420</p><p class="muted">Readable copy for first-year anatomy revision.</p><button class="btn btn-primary" type="button" data-notify="Seller contact feature is coming soon.">Contact Seller</button></div>
+          </article>
+          <article class="book-card reveal" data-book-card data-title="Constitutional Law" data-author="M. P. Jain" data-category="law" data-condition="good">
+            <div class="book-cover"><img src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?auto=format&fit=crop&w=700&q=80" alt="Law book"></div>
+            <div class="book-body"><h3>Constitutional Law</h3><div class="book-meta"><span class="pill">Law</span><span class="pill pill-green">Good</span></div><p class="price">Rs. 340</p><p class="muted">Includes case references and clean margins.</p><button class="btn btn-primary" type="button" data-notify="Seller contact feature is coming soon.">Contact Seller</button></div>
+          </article>
+          <article class="book-card reveal" data-book-card data-title="English Literature" data-author="Norton Anthology" data-category="arts" data-condition="excellent">
+            <div class="book-cover"><img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=700&q=80" alt="English literature book"></div>
+            <div class="book-body"><h3>English Literature</h3><div class="book-meta"><span class="pill">Arts</span><span class="pill pill-yellow">Excellent</span></div><p class="price">Rs. 280</p><p class="muted">Helpful anthology for literature survey courses.</p><button class="btn btn-primary" type="button" data-notify="Seller contact feature is coming soon.">Contact Seller</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div><h3>BookSwap</h3><p>Exchange knowledge, not just books.</p></div>
+        <div><h4>Quick Links</h4><a href="index.html">Home</a><a href="books.html">Books</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a></div>
+        <div><h4>Marketplace</h4><a href="categories.html">Categories</a><a href="sellers.html">Sellers</a><a href="sell.html">Sell a Book</a><span class="muted">Terms & Conditions</span></div>
+        <div><h4>Follow Us</h4><div class="social-icons"><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div>
+      </div>
+      <p class="footer-bottom">© <span data-year>2026</span> BookSwap. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/books.js"></script>
+</body>
+</html>

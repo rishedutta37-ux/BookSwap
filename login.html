@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | BookSwap</title>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html"><span class="logo-icon"><i class="fa-solid fa-book-open"></i></span>BookSwap</a>
+      <div class="nav-links"><a data-nav href="index.html">Home</a><a data-nav href="books.html">Books</a><a data-nav href="categories.html">Categories</a><a data-nav href="sellers.html">Sellers</a><a data-nav href="pricing.html">Pricing</a><a data-nav href="contact.html">Contact</a></div>
+      <div class="auth-buttons"><a class="login-btn" href="login.html">Login</a><a class="signup-btn" href="signup.html">Sign Up</a></div>
+    </div>
+  </nav>
+
+  <main class="auth-shell">
+    <div class="container">
+      <div class="auth-card">
+        <aside class="auth-art"><h1>Welcome back to BookSwap.</h1><p>Check saved listings, contact sellers, and prepare for your next semester exchange.</p></aside>
+        <form class="form-panel" data-demo-form data-success-message="Login demo complete. Authentication is not connected yet.">
+          <h2>Login</h2>
+          <p>Use any valid email format to preview the static login flow.</p>
+          <div class="stack">
+            <div class="field"><label for="login-email">Email</label><input id="login-email" name="email" type="email" required placeholder="student@example.com"></div>
+            <div class="field"><label for="login-password">Password</label><input id="login-password" name="password" type="password" required minlength="6" placeholder="Enter password"></div>
+            <label class="checkbox-field"><input type="checkbox" name="remember"> Remember me</label>
+            <button class="btn btn-primary" type="submit"><i class="fa-solid fa-right-to-bracket"></i>Login</button>
+            <p class="muted">New to BookSwap? <a class="text-link" href="signup.html">Create an account</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div><h3>BookSwap</h3><p>Exchange knowledge, not just books.</p></div>
+        <div><h4>Quick Links</h4><a href="index.html">Home</a><a href="books.html">Books</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a></div>
+        <div><h4>Marketplace</h4><a href="categories.html">Categories</a><a href="sellers.html">Sellers</a><a href="sell.html">Sell a Book</a><span class="muted">Privacy Policy</span></div>
+        <div><h4>Follow Us</h4><div class="social-icons"><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div>
+      </div>
+      <p class="footer-bottom">© <span data-year>2026</span> BookSwap. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/forms.js"></script>
+</body>
+</html>

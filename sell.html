@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell a Book | BookSwap</title>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html"><span class="logo-icon"><i class="fa-solid fa-book-open"></i></span>BookSwap</a>
+      <div class="nav-links"><a data-nav href="index.html">Home</a><a data-nav href="books.html">Books</a><a data-nav href="categories.html">Categories</a><a data-nav href="sellers.html">Sellers</a><a data-nav href="pricing.html">Pricing</a><a data-nav href="contact.html">Contact</a></div>
+      <div class="auth-buttons"><a class="login-btn" href="login.html">Login</a><a class="signup-btn" href="signup.html">Sign Up</a></div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <div><span class="page-kicker"><i class="fa-solid fa-circle-plus"></i> Sell Book</span><h1>List your book for another student to use.</h1><p>Create a clean static demo listing with the details buyers need before contacting you.</p></div>
+        <a class="btn btn-primary" href="pricing.html"><i class="fa-solid fa-tags"></i>Seller Plans</a>
+      </div>
+    </header>
+
+    <section>
+      <div class="container split-layout">
+        <form class="form-panel reveal" data-demo-form data-success-message="Book listing demo submitted. Listings are not stored without a backend.">
+          <h2>Book Details</h2>
+          <p>Use clear information so buyers can decide quickly.</p>
+          <div class="form-grid">
+            <div class="field"><label for="book-title">Book Title</label><input id="book-title" name="title" required placeholder="Database Systems"></div>
+            <div class="field"><label for="book-author">Author</label><input id="book-author" name="author" required placeholder="Author name"></div>
+            <div class="field"><label for="book-category">Category</label><select id="book-category" name="category" required><option value="">Choose category</option><option>Computer Science</option><option>Engineering</option><option>Mathematics</option><option>Physics</option><option>Commerce</option><option>Medical</option><option>Law</option><option>Arts</option></select></div>
+            <div class="field"><label for="book-condition">Condition</label><select id="book-condition" name="condition" required><option value="">Choose condition</option><option>Like New</option><option>Excellent</option><option>Good</option><option>Used</option></select></div>
+            <div class="field"><label for="book-price">Price</label><input id="book-price" name="price" type="number" min="0" required placeholder="250"></div>
+            <div class="field"><label for="book-location">College / Pickup</label><input id="book-location" name="location" required placeholder="Library gate, college name"></div>
+            <div class="field full"><label for="book-description">Description</label><textarea id="book-description" name="description" required placeholder="Mention edition, markings, notes, and pickup preference"></textarea></div>
+          </div>
+          <button class="btn btn-primary" type="submit"><i class="fa-solid fa-upload"></i>Submit Listing</button>
+        </form>
+        <aside class="info-panel card reveal">
+          <h2>Listing checklist</h2>
+          <p class="muted">A better listing helps students trust the exchange.</p>
+          <div class="sell-steps">
+            <div class="sell-step"><span>1</span><div><h3>Be specific</h3><p>Include edition, subject, and semester relevance.</p></div></div>
+            <div class="sell-step"><span>2</span><div><h3>Describe condition</h3><p>Mention highlights, notes, missing pages, or wear.</p></div></div>
+            <div class="sell-step"><span>3</span><div><h3>Pick safe exchange spots</h3><p>Use campus libraries, department halls, or common areas.</p></div></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div><h3>BookSwap</h3><p>Exchange knowledge, not just books.</p></div>
+        <div><h4>Quick Links</h4><a href="index.html">Home</a><a href="books.html">Books</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a></div>
+        <div><h4>Marketplace</h4><a href="categories.html">Categories</a><a href="sellers.html">Sellers</a><a href="sell.html">Sell a Book</a><span class="muted">Privacy Policy</span></div>
+        <div><h4>Follow Us</h4><div class="social-icons"><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div>
+      </div>
+      <p class="footer-bottom">© <span data-year>2026</span> BookSwap. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/forms.js"></script>
+</body>
+</html>

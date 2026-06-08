@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookSwap | Buy, Sell & Exchange Academic Books</title>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html" aria-label="BookSwap home"><span class="logo-icon"><i class="fa-solid fa-book-open"></i></span>BookSwap</a>
+      <div class="nav-links" aria-label="Primary navigation">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="books.html">Books</a>
+        <a data-nav href="categories.html">Categories</a>
+        <a data-nav href="sellers.html">Sellers</a>
+        <a data-nav href="pricing.html">Pricing</a>
+        <a data-nav href="contact.html">Contact</a>
+      </div>
+      <div class="auth-buttons">
+        <a class="login-btn" href="login.html">Login</a>
+        <a class="signup-btn" href="signup.html">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="news-bar">
+    <div class="news-content">New books added daily - Semester exchange open - Sell old books and earn money - Free delivery for Premium members - Trusted student marketplace</div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Buy, sell, and exchange academic books easily.</h1>
+          <p>Connect with nearby students, save money on textbooks, and keep useful books moving from one semester to the next.</p>
+          <div class="hero-buttons">
+            <a class="primary-btn" href="books.html"><i class="fa-solid fa-magnifying-glass"></i>Browse Books</a>
+            <a class="secondary-btn" href="sell.html"><i class="fa-solid fa-circle-plus"></i>Sell Your Book</a>
+          </div>
+          <form class="hero-search" data-hero-search>
+            <label class="sr-only" for="home-search">Search books, authors, or subjects</label>
+            <input id="home-search" type="search" placeholder="Search books, authors, subjects...">
+            <button type="submit" aria-label="Search"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+        <aside class="hero-panel" aria-label="Recent listings">
+          <h3>Fresh listings today</h3>
+          <div class="mini-listing">
+            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=240&q=80" alt="Data structures textbook">
+            <div><strong>Data Structures</strong><span>Computer Science</span></div>
+            <span class="price">Rs. 250</span>
+          </div>
+          <div class="mini-listing">
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=240&q=80" alt="Operating systems textbook">
+            <div><strong>Operating Systems</strong><span>Engineering</span></div>
+            <span class="price">Rs. 300</span>
+          </div>
+          <div class="mini-listing">
+            <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=240&q=80" alt="Database systems textbook">
+            <div><strong>Database Systems</strong><span>Computer Science</span></div>
+            <span class="price">Rs. 220</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="preview-band">
+      <div class="container stat-grid">
+        <article class="stat-card reveal"><h2>500+</h2><p>Books listed</p></article>
+        <article class="stat-card reveal"><h2>200+</h2><p>Active students</p></article>
+        <article class="stat-card reveal"><h2>50+</h2><p>College networks</p></article>
+        <article class="stat-card reveal"><h2>100+</h2><p>Successful exchanges</p></article>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <h2>How BookSwap Works</h2>
+          <p>A simple student-to-student flow for listing, finding, and exchanging academic books.</p>
+        </div>
+        <div class="steps">
+          <article class="step reveal"><i class="fas fa-book"></i><h3>List Your Book</h3><p>Add the title, condition, price, and campus pickup details.</p></article>
+          <article class="step reveal"><i class="fas fa-search"></i><h3>Find Buyers</h3><p>Students search by subject, semester, category, and condition.</p></article>
+          <article class="step reveal"><i class="fas fa-handshake"></i><h3>Exchange Safely</h3><p>Meet on campus, confirm the book, and complete the exchange.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <h2>Popular Categories</h2>
+          <p>Jump into the subjects students search for most often.</p>
+        </div>
+        <div class="category-grid">
+          <a class="category-card reveal" href="books.html?category=computer-science"><span class="category-icon"><i class="fa-solid fa-laptop-code"></i></span><h3>Computer Science</h3><p>Programming, algorithms, databases, and systems.</p></a>
+          <a class="category-card reveal" href="books.html?category=engineering"><span class="category-icon"><i class="fa-solid fa-gears"></i></span><h3>Engineering</h3><p>Core engineering texts and lab manuals.</p></a>
+          <a class="category-card reveal" href="books.html?category=mathematics"><span class="category-icon"><i class="fa-solid fa-square-root-variable"></i></span><h3>Mathematics</h3><p>Calculus, algebra, statistics, and applied math.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <h2>Latest Listings</h2>
+          <p>Recently posted books from students across campus networks.</p>
+        </div>
+        <div class="book-grid">
+          <article class="book-card reveal">
+            <div class="book-cover"><img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=700&q=80" alt="Data Structures textbook"></div>
+            <div class="book-body"><h3>Data Structures</h3><div class="book-meta"><span class="pill">Computer Science</span><span class="pill pill-green">Good</span></div><p class="price">Rs. 250</p><p class="muted">Used book with clean notes and highlighted examples.</p><button class="btn btn-primary" type="button" data-notify="Seller contact feature is coming soon.">Contact Seller</button></div>
+          </article>
+          <article class="book-card reveal">
+            <div class="book-cover"><img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=700&q=80" alt="Operating Systems textbook"></div>
+            <div class="book-body"><h3>Operating Systems</h3><div class="book-meta"><span class="pill">Engineering</span><span class="pill pill-yellow">Excellent</span></div><p class="price">Rs. 300</p><p class="muted">Latest edition with minimal markings.</p><button class="btn btn-primary" type="button" data-notify="Seller contact feature is coming soon.">Contact Seller</button></div>
+          </article>
+          <article class="book-card reveal">
+            <div class="book-cover"><img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=700&q=80" alt="Database Systems textbook"></div>
+            <div class="book-body"><h3>Database Systems</h3><div class="book-meta"><span class="pill">Computer Science</span><span class="pill pill-green">Like New</span></div><p class="price">Rs. 220</p><p class="muted">Clean copy for DBMS coursework.</p><button class="btn btn-primary" type="button" data-notify="Seller contact feature is coming soon.">Contact Seller</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <h2>Student Reviews</h2>
+          <p>Students use BookSwap to spend less and sell books faster.</p>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial reveal"><p><strong>5.0</strong> - Found my semester books at half the original price.</p><h3>Amit Kumar</h3></article>
+          <article class="testimonial reveal"><p><strong>5.0</strong> - Sold all my old books within a week.</p><h3>Priya Sharma</h3></article>
+          <article class="testimonial reveal"><p><strong>5.0</strong> - Easy, fast, and affordable book exchange.</p><h3>Rohan Das</h3></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div><h3>BookSwap</h3><p>Exchange knowledge, not just books.</p></div>
+        <div><h4>Quick Links</h4><a href="index.html">Home</a><a href="books.html">Books</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a></div>
+        <div><h4>Marketplace</h4><a href="categories.html">Categories</a><a href="sellers.html">Sellers</a><a href="sell.html">Sell a Book</a><span class="muted">Privacy Policy</span></div>
+        <div><h4>Follow Us</h4><div class="social-icons"><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div>
+      </div>
+      <p class="footer-bottom">© <span data-year>2026</span> BookSwap. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

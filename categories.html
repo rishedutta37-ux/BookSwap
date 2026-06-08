@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories | BookSwap</title>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html"><span class="logo-icon"><i class="fa-solid fa-book-open"></i></span>BookSwap</a>
+      <div class="nav-links"><a data-nav href="index.html">Home</a><a data-nav href="books.html">Books</a><a data-nav href="categories.html">Categories</a><a data-nav href="sellers.html">Sellers</a><a data-nav href="pricing.html">Pricing</a><a data-nav href="contact.html">Contact</a></div>
+      <div class="auth-buttons"><a class="login-btn" href="login.html">Login</a><a class="signup-btn" href="signup.html">Sign Up</a></div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <div><span class="page-kicker"><i class="fa-solid fa-layer-group"></i> Categories</span><h1>Browse books by subject and semester need.</h1><p>Start with a category, then jump into filtered marketplace results.</p></div>
+        <a class="btn btn-primary" href="books.html"><i class="fa-solid fa-book"></i>All Books</a>
+      </div>
+    </header>
+
+    <section>
+      <div class="container category-grid">
+        <a class="category-card reveal" href="books.html?category=computer-science"><span class="category-icon"><i class="fa-solid fa-laptop-code"></i></span><h3>Computer Science</h3><p>Programming, architecture, algorithms, database systems, and networks.</p><ul><li>Data Structures</li><li>Operating Systems</li><li>Database Systems</li></ul></a>
+        <a class="category-card reveal" href="books.html?category=engineering"><span class="category-icon"><i class="fa-solid fa-gears"></i></span><h3>Engineering</h3><p>Core engineering, workshop practice, electronics, mechanics, and lab manuals.</p><ul><li>Basic Electrical</li><li>Thermodynamics</li><li>Machine Design</li></ul></a>
+        <a class="category-card reveal" href="books.html?category=mathematics"><span class="category-icon"><i class="fa-solid fa-square-root-variable"></i></span><h3>Mathematics</h3><p>Books for calculus, algebra, statistics, discrete math, and numerical methods.</p><ul><li>Engineering Mathematics</li><li>Linear Algebra</li><li>Probability</li></ul></a>
+        <a class="category-card reveal" href="books.html?category=physics"><span class="category-icon"><i class="fa-solid fa-atom"></i></span><h3>Physics</h3><p>Foundational physics, optics, electronics, and entrance exam preparation.</p><ul><li>Concepts of Physics</li><li>Modern Physics</li><li>Optics</li></ul></a>
+        <a class="category-card reveal" href="books.html?category=commerce"><span class="category-icon"><i class="fa-solid fa-chart-line"></i></span><h3>Commerce</h3><p>Accounting, economics, business law, taxation, and management texts.</p><ul><li>Financial Accounting</li><li>Microeconomics</li><li>Business Studies</li></ul></a>
+        <a class="category-card reveal" href="books.html?category=medical"><span class="category-icon"><i class="fa-solid fa-stethoscope"></i></span><h3>Medical</h3><p>Anatomy, physiology, pharmacology, nursing, and exam prep material.</p><ul><li>Anatomy</li><li>Physiology</li><li>Biochemistry</li></ul></a>
+        <a class="category-card reveal" href="books.html?category=law"><span class="category-icon"><i class="fa-solid fa-scale-balanced"></i></span><h3>Law</h3><p>Constitutional law, contracts, criminal law, and case-study references.</p><ul><li>Indian Constitution</li><li>Contract Law</li><li>Legal Methods</li></ul></a>
+        <a class="category-card reveal" href="books.html?category=arts"><span class="category-icon"><i class="fa-solid fa-palette"></i></span><h3>Arts</h3><p>Literature, history, political science, design, and humanities books.</p><ul><li>English Literature</li><li>Modern History</li><li>Political Theory</li></ul></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div><h3>BookSwap</h3><p>Exchange knowledge, not just books.</p></div>
+        <div><h4>Quick Links</h4><a href="index.html">Home</a><a href="books.html">Books</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a></div>
+        <div><h4>Marketplace</h4><a href="categories.html">Categories</a><a href="sellers.html">Sellers</a><a href="sell.html">Sell a Book</a><span class="muted">Privacy Policy</span></div>
+        <div><h4>Follow Us</h4><div class="social-icons"><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div>
+      </div>
+      <p class="footer-bottom">© <span data-year>2026</span> BookSwap. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
